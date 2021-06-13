@@ -85,6 +85,16 @@ button::after {
     cursor: pointer;
 }
 
+
+.text2{
+    position: relative;
+    border-style: groove;
+    top:-20px;
+    background-color: rgb(191, 162, 197);
+    color: rgb(40, 23, 87);
+}
+
+
 #istct {
     position: absolute;
     top: 50%;
@@ -127,6 +137,14 @@ button::after {
     display: flex;
 }
 
+.click{
+    position: relative;
+    left: 366px;
+    background-color: rgb(219, 210, 86);
+    opacity: 0.9;
+    color: rgb(22, 4, 70);
+}
+
 .creature {
     width: 150px;
     left: 0px;
@@ -145,7 +163,6 @@ button::after {
 .popuptext{
     overflow: hidden;
     white-space: nowrap;
-    color: white;
     text-overflow: ellipsis;
     visibility: hidden;
     width: 160px;
@@ -158,13 +175,13 @@ button::after {
 }
 
 #pop2 {
-    right: 300px;
-    bottom: 100px;
+    right: 200px;
+    bottom: 130px;
     position: relative;    
 }
 
 #pop3 {
-    bottom: 100px;
+    bottom: 150px;
     left: 50px;
     position: relative;
 }
