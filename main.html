@@ -16,10 +16,12 @@
         </style>
     </head>
     
+    <div id="darker"></div>
+
     <div id="istct">
         <span id="close">×</span>
         <img src="https://www.pngkit.com/png/full/179-1791596_wasd-keys-png-wasd-keys.png" id="wasd">
-        <span id="text"> Using WASD to nevigate around and try to click the creatures to see what happens.</span>
+        <span id="text"> Using WASD to nevigate around and try to click the creatures<br> to see what happens.</span>
     </div>
 
     <!--images of creatures-->
@@ -67,6 +69,8 @@
         document.addEventListener("click", function(event){
             if (event.target.matches("#close") || !event.target.closest("#istct")) {
                 document.getElementById("istct").style.display = "none";
+                document.getElementById("darker").style.opacity = "0";
+                document.querySelector(".creature").style.opacity = "1";
             }
         })
 
