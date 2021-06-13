@@ -89,6 +89,7 @@ button::after {
 .text2{
     position: relative;
     border-style: groove;
+    padding: 10px;
     top:-20px;
     background-color: rgb(191, 162, 197);
     color: rgb(40, 23, 87);
@@ -169,7 +170,7 @@ button::after {
 }
 
 #pop1 {
-    top: 80px;
+    top: 120px;
     position: relative;    
     
 }

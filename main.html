@@ -35,7 +35,7 @@
             extant species in the genus Eretmochelys. The species has<br>
             a worldwide distribution, with Atlantic and Indo-Pacific<br>
             subspecies—E. i. imbricata and E. i. bissa, respectively.<br>
-            </div>
+        </div>
         </p></span>
     </div>
     
@@ -76,6 +76,7 @@
             if (event.target.matches("#close") || !event.target.closest("#istct")) {
                 document.getElementById("istct").style.display = "none";
                 document.getElementById("darker").style.opacity = "0";
+                document.getElementById("darker").style.cursor = "default";
                 document.querySelector(".creature").style.opacity = "1";
             }
         })
