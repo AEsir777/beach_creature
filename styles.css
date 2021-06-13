@@ -85,11 +85,6 @@ button::after {
     cursor: pointer;
 }
 
-.popuptext {
-    color: white;
-}
-
-
 #istct {
     position: absolute;
     top: 50%;
@@ -150,6 +145,7 @@ button::after {
 .popuptext{
     overflow: hidden;
     white-space: nowrap;
+    color: white;
     text-overflow: ellipsis;
     visibility: hidden;
     width: 160px;
