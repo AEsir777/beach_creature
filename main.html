@@ -11,6 +11,7 @@
             body {
                 background-image: url('https://www.wallpaperflare.com/static/1001/50/382/ultra-wide-photography-nature-underwater-wallpaper.jpg');
                 background-position: 0px 0px;
+                overflow: hidden;
             }
         </style>
     </head>
@@ -30,8 +31,30 @@
             extant species in the genus Eretmochelys. The species has<br>
             a worldwide distribution, with Atlantic and Indo-Pacific<br>
             subspecies—E. i. imbricata and E. i. bissa, respectively.<br>
-        </p>
-        </pre></span>
+        </p></span>
+    </div>
+    
+    <div class = "stingray">
+        <img src="https://www.pinclipart.com/picdir/big/546-5463732_stingray-png-real-sea-animals-png-clipart.png" class="creature" id="c2">
+        <span class="popuptext" id="pop2"><p>
+            <span onclick="exit2()">x</span>
+            The <Strong>Stingrays</Strong> are a group of sea rays, which are cartilaginous<br>
+            fish related to sharks. They are classified in the suborder<br>
+            Myliobatoidei of the order Myliobatiformes and consist of eight<br>
+            families: Hexatrygonidae, Plesiobatidae, Urolophidae, Urotrygonidae,<br>
+            Dasyatidae, Potamotrygonidae, Gymnuridae, and Myliobatidae.<br>
+        </p></span>
+    </div>
+
+    <div class = "great_white_shark">
+        <img src="https://www.nicepng.com/png/full/122-1227817_shark-swimming-png-image-great-white-shark-transparent.png" class="creature" id="c3">
+        <span class="popuptext" id="pop3"><p>
+            <span onclick="exit3()">x</span>
+            <strong>The great white shark</strong>, also known as the white shark, white pointer,<br>
+            or simply great white, is a species of large mackerel shark<br>
+            which can be found in the coastal surface waters of all<br>
+            the major oceans.
+        </p></span>
     </div>
 
     <script language="JavaScript">
@@ -46,10 +69,28 @@
         }
         c1.addEventListener("click", func1);
 
+        var c2 = document.getElementById("c2");
+        function func2() {
+            document.getElementById("pop2").style.visibility="visible";
+        }
+        c2.addEventListener("click", func2);
+
+        var c3 = document.getElementById("c3"); 
+        function func3() {
+            document.getElementById("pop3").style.visibility="visible";
+        }
+        c3.addEventListener("click", func3);
+
         function exit1() {
             document.getElementById("pop1").style.visibility="hidden";
-        } 
-
+        }
+        function exit2() {
+            document.getElementById("pop2").style.visibility="hidden";
+        }
+        function exit3() {
+            document.getElementById("pop3").style.visibility="hidden";
+        }
+    
         var y = 0;
         var x = 0;
 
@@ -80,6 +121,10 @@
 
             c1.style.left = x+"px";
             c1.style.top = y+"px";
+            c2.style.left = x+"px";
+            c2.style.top = y+"px";
+            c3.style.left = x+"px";
+            c3.style.top = y+"px";
         }
 
         

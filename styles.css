@@ -1,12 +1,10 @@
 .creature {
    width: 150px;
-}
-
-#c1 {
-    left: 0px;
+   left: 0px;
     top: 0px;
     position: absolute;
 }
+
 
 .hawksbill_sea_turtle {  
     left: 68px;
@@ -14,8 +12,43 @@
     position: absolute;
 }
 
+.popuptext{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    visibility: hidden;
+}
+
 #pop1 {
     top: 80px;
     position: relative;    
-    visibility: hidden;
+    
+}
+
+#pop2 {
+    right: 500px;
+    bottom: 100px;
+    position: relative;    
+}
+
+.stingray {
+   left: 1500px;
+   top: 500px;
+   position: absolute;  
+}
+
+.great_white_shark {
+    left: 600px;
+    top: 800px;
+    position: absolute;
+}
+
+#c3 {
+    width: 400px;
+}
+
+#pop3 {
+    bottom: 150px;
+    left: 300px;
+    position: absolute;
 }
