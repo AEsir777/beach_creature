@@ -1,0 +1,183 @@
+#start {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;   
+    font-size: 25px;
+    color: #f3f8fa;
+}
+
+#bg {
+    size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: 70%; 
+}
+
+#sn {
+    color: rgb(255, 238, 0);
+    top: 50%;
+    text-align: center;
+	cursor: pointer;
+	position: relative;
+	padding: 16px 32px;
+	border-radius: 44px;
+	line-height: 40px;
+	font-size: 28px;
+	font-weight: 600;
+	opacity: 0.9;
+	border: 2px solid #1b3a83;
+	background-image: linear-gradient(-180deg, #89daff 0%, #6462b8 100%);
+	box-shadow: 0 16px 22px 0 rgba(22,75,195,0.50),
+							0 -4px 22px rgb(149, 207, 185) inset,
+							0 12px 8px rgba(255,255,255, 0.4) inset,
+							0 4px 10px 0 rgb(188, 152, 197) inset;
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.explore {
+    font-family: 'Allerta Stencil';
+    font-size: 60px;
+}
+
+
+#darker {
+    background-color: grey;
+    position: absolute;
+    top:0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#istct {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: rgba(117, 190, 218, 1.0);
+    opacity: 0.7;
+}
+
+#close {
+    position: relative;
+    top: -58%;
+    right: -96%;
+    font-size: 25px;
+    color: brown;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#wasd {
+    position: relative;
+    width: 300px;
+    top: 29%;
+    left: 16%;
+}
+
+#text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    left: 0%;
+    top: -55%;
+    font-size: 20px;
+    text-align: center; 
+    display: flex;
+}
+
+.creature {
+    width: 150px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.hawksbill_sea_turtle {  
+    left: 68px;
+    top: 345px;
+    position: absolute;
+}
+
+.popuptext{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    visibility: hidden;
+    width: 160px;
+}
+
+#pop1 {
+    top: 80px;
+    position: relative;    
+    
+}
+
+#pop2 {
+    right: 300px;
+    bottom: 100px;
+    position: relative;    
+}
+
+#pop3 {
+    bottom: 100px;
+    left: 50px;
+    position: relative;
+}
+
+.stingray {
+   left: 1500px;
+   top: 500px;
+   position: absolute;  
+}
+
+.great_white_shark {
+    left: 600px;
+    top: 800px;
+    position: absolute;
+}
+
+#c3 {
+    width: 400px;
+}
