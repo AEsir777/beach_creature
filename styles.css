@@ -26,9 +26,15 @@
 }
 
 #pop2 {
-    right: 500px;
+    right: 300px;
     bottom: 100px;
     position: relative;    
+}
+
+#pop3 {
+    bottom: 100px;
+    left: 50px;
+    position: relative;
 }
 
 .stingray {
@@ -45,10 +51,4 @@
 
 #c3 {
     width: 400px;
-}
-
-#pop3 {
-    bottom: 150px;
-    left: 300px;
-    position: absolute;
 }
