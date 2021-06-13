@@ -1,5 +1,21 @@
-#pic {
+.creature {
+   width: 150px;
+}
+
+#c1 {
     left: 0px;
     top: 0px;
     position: absolute;
+}
+
+.hawksbill_sea_turtle {  
+    left: 68px;
+    top: 345px;
+    position: absolute;
+}
+
+#pop1 {
+    top: 80px;
+    position: relative;    
+    visibility: hidden;
 }

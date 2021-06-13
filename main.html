@@ -1,3 +1,87 @@
-<html>
-    <img src="https://www.wallpaperflare.com/static/1001/50/382/ultra-wide-photography-nature-underwater-wallpaper.jpg">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Have fun exploring the underwater world and learn knowledge about various sea creatures.">
+        <title>Underwater World</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="icon.ico">
+        <style>
+            body {
+                background-image: url('https://www.wallpaperflare.com/static/1001/50/382/ultra-wide-photography-nature-underwater-wallpaper.jpg');
+                background-position: 0px 0px;
+            }
+        </style>
+    </head>
+    
+    <div id="istct">
+        <span id="close">×</span>
+        <p id="modal">Nevigate around and try to click the creatures.</p>
+    </div>
+
+    <!--images of creatures-->
+    <div class = "hawksbill_sea_turtle">
+        <img src="https://www.pikpng.com/pngl/b/456-4565504_eretmochelys-imbricata-ocean-animals-with-transparent-background-clipart.png"  class="creature" id="c1"> 
+        <span class="popuptext" id="pop1"><p>
+            <span onclick="exit1()">x</span>
+            The <strong>hawksbill sea turtle</strong> is a critically endangered sea<br> 
+            turtle belonging to the family Cheloniidae. It is the only<br>
+            extant species in the genus Eretmochelys. The species has<br>
+            a worldwide distribution, with Atlantic and Indo-Pacific<br>
+            subspecies—E. i. imbricata and E. i. bissa, respectively.<br>
+        </p>
+        </pre></span>
+    </div>
+
+    <script language="JavaScript">
+        function func() {
+            document.getElementById("istct").style.display = "none";
+        }
+        document.getElementById("close").addEventListener("click", func);
+
+        var c1 = document.getElementById("c1");
+        function func1() {
+            document.getElementById("pop1").style.visibility="visible";
+        }
+        c1.addEventListener("click", func1);
+
+        function exit1() {
+            document.getElementById("pop1").style.visibility="hidden";
+        } 
+
+        var y = 0;
+        var x = 0;
+
+        window.onkeydown = function(e) {
+            switch(e.keyCode) {
+                case 83:
+                    if (y > -350) {
+                        y -= 5;
+                    } 
+                    break;
+                case 87:
+                    if (y < 0) {
+                        y += 5;
+                    }
+                    break; 
+                case 65:
+                    if (x < 0) {
+                        x += 5;
+                    }
+                    break; 
+                case 68:
+                    if (x > -1000) {
+                        x -= 5;
+                    }
+                    break; 
+            }
+            document.body.style.backgroundPosition=x+"px "+y+"px";
+
+            c1.style.left = x+"px";
+            c1.style.top = y+"px";
+        }
+
+        
+    </script>
 </html>
