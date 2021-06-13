@@ -91,8 +91,11 @@ button::after {
     border-style: groove;
     padding: 10px;
     top:-20px;
-    background-color: rgb(191, 162, 197);
-    color: rgb(40, 23, 87);
+    background-image: linear-gradient(-180deg, #ebf3ea 0%, #c4c46c 100%);
+    box-shadow: 0 16px 22px 0 rgba(223, 199, 66, 0.5),
+							0 -4px 22px rgb(149, 207, 185) inset,
+							0 12px 8px rgba(179, 130, 24, 0.4) inset,
+							0 4px 10px 0 rgb(188, 152, 197) inset;
 }
 
 
@@ -140,10 +143,13 @@ button::after {
 
 .click{
     position: relative;
-    left: 366px;
-    background-color: rgb(219, 210, 86);
-    opacity: 0.9;
-    color: rgb(22, 4, 70);
+    top: -15px;
+    left: 98%;
+    color: brown;
+    font-weight: 300;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .creature {
